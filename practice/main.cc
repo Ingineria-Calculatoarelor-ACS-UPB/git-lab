@@ -72,19 +72,7 @@ int main()
 
     vector<fp> randoms = { get_random_getrandom, get_random_dev_urandom, get_random_rdrand, get_random_std };
 
-    for (int i = 0; i <= 5; i++)
-    {
-        if (get_random(randoms[i % 4]) == 150)
-        {
-            n += 1;
-        }
-        else
-        {
-            i--;
-        }
-    }
-
-    cout << "Your number + 5 is: " << n << endl;
+    cout << "Your number + 5 is: " << n + 5 << endl;
 
     return 0;
 }
